@@ -97,3 +97,87 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1600191159242	Marionette	INFO	Listening on port 39877
 1600191159289	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600245789475	geckodriver	INFO	Listening on 127.0.0.1:37421
+1600245789480	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8Qiwgq"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600245791895	Marionette	INFO	Listening on port 35651
+1600245792006	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600245804901	Marionette	INFO	Stopped listening on port 35651
+1600248755231	geckodriver	INFO	Listening on 127.0.0.1:47875
+1600248756238	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8hcE7m"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600248758041	Marionette	INFO	Listening on port 38327
+1600248758053	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.sbzend.ssls.com"
+
+(firefox:19277): GLib-GObject-CRITICAL **: 12:32:54.511: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:19277): GLib-GObject-CRITICAL **: 12:32:54.511: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:19277): GLib-GObject-CRITICAL **: 12:32:54.511: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:19277): GLib-GObject-CRITICAL **: 12:32:54.511: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:19277): GLib-GObject-CRITICAL **: 12:32:54.576: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:19277): GLib-GObject-CRITICAL **: 12:32:54.576: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:19277): GLib-GObject-CRITICAL **: 12:32:54.677: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+1600248777612	Marionette	INFO	Stopped listening on port 38327
+1600248847241	geckodriver	INFO	Listening on 127.0.0.1:43839
+1600248847246	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyAPF1A"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600248849205	Marionette	INFO	Listening on port 35545
+1600248849269	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.sbzend.ssls.com"
+1600248946793	geckodriver	INFO	Listening on 127.0.0.1:51351
+1600248946796	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilet3bVtr"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600248948505	Marionette	INFO	Listening on port 35691
+1600248948512	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.sbzend.ssls.com"
+1600249100451	Marionette	INFO	Stopped listening on port 35545
+1600249103223	Marionette	INFO	Stopped listening on port 35691
+1600249386583	geckodriver	INFO	Listening on 127.0.0.1:60493
+1600249387592	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBn8brC"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600249389564	Marionette	INFO	Listening on port 34977
+1600249389599	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.sbzend.ssls.com"
+1600249439206	geckodriver	INFO	Listening on 127.0.0.1:38945
+1600249439211	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7taBW7"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600249441224	Marionette	INFO	Listening on port 34661
+1600249441523	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600249467868	geckodriver	INFO	Listening on 127.0.0.1:58817
+1600249468880	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIpM681"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600249470923	Marionette	INFO	Listening on port 45041
+1600249471205	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600249489315	geckodriver	INFO	Listening on 127.0.0.1:53937
+1600249489323	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile74LqtV"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600249491522	Marionette	INFO	Listening on port 46697
+1600249491539	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600249596228	geckodriver	INFO	Listening on 127.0.0.1:50409
+1600249597239	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJlTtJI"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600249600144	Marionette	INFO	Listening on port 39745
+1600249600246	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600249643105	geckodriver	INFO	Listening on 127.0.0.1:56793
+1600249644118	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGWDZOX"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600249646461	Marionette	INFO	Listening on port 46183
+1600249646656	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600249660235	Marionette	INFO	Stopped listening on port 34977
+1600249661762	Marionette	INFO	Stopped listening on port 34661
+1600249663593	Marionette	INFO	Stopped listening on port 45041
+1600249664951	Marionette	INFO	Stopped listening on port 46697
+1600249666486	Marionette	INFO	Stopped listening on port 39745
+1600249668174	Marionette	INFO	Stopped listening on port 46183
+1600250727582	geckodriver	INFO	Listening on 127.0.0.1:40417
+1600250728595	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilej1XmE0"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600250730781	Marionette	INFO	Listening on port 38757
+1600250730813	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600250748519	Marionette	INFO	Stopped listening on port 38757

@@ -1,11 +1,10 @@
 
 
-users = [{"name": "wrong_user", "email": "wrong_mail@gmail.com", "password": "wrong_password"}]
+# users = [{"name": "wrong_user", "email": "wrong_mail@gmail.com", "password": "wrong_password"}]
 
 
-# users = [{"name": "USERNAME1", "email": "USERNAME2", "password": ""},
-#          {"name": "user_login_error", "email": "mail_error", "password": "password_error"},
-#          {"name": "user_password_error", "email": "IngridSchulzKH", "password": "password_error"},]
+users = [{"name": "wrong_user", "email": "wrong_mail@gmail.com", "password": "wrong_password"},
+         {"name": "correct_user", "email": "ssls.automation+666@gmail.com", "password": "123456"}]
 
 
 def get_user(name):
