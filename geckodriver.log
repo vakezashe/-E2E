@@ -181,3 +181,155 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 1600250730781	Marionette	INFO	Listening on port 38757
 1600250730813	Marionette	WARN	TLS certificate errors will be ignored for this session
 1600250748519	Marionette	INFO	Stopped listening on port 38757
+1600250916718	geckodriver	INFO	Listening on 127.0.0.1:36645
+1600250916721	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8rTNqR"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600250918598	Marionette	INFO	Listening on port 41901
+1600250918638	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600251692337	geckodriver	INFO	Listening on 127.0.0.1:45797
+1600251692340	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqfwKG0"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600251694464	Marionette	INFO	Listening on port 45311
+1600251694546	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600251708173	Marionette	INFO	Stopped listening on port 45311
+1600251718084	geckodriver	INFO	Listening on 127.0.0.1:58335
+1600251718087	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5Bxq7p"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600251720060	Marionette	INFO	Listening on port 40019
+1600251720107	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600251830175	geckodriver	INFO	Listening on 127.0.0.1:56465
+1600251830178	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMuOAUU"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600251832250	Marionette	INFO	Listening on port 39401
+1600251832284	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600252788853	geckodriver	INFO	Listening on 127.0.0.1:41959
+1600252789859	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewQokNy"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600252791933	Marionette	INFO	Listening on port 33807
+1600252791968	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600252877139	Marionette	INFO	Stopped listening on port 41901
+1600252878840	Marionette	INFO	Stopped listening on port 40019
+1600252880357	Marionette	INFO	Stopped listening on port 39401
+1600252882155	Marionette	INFO	Stopped listening on port 33807
+1600254401916	geckodriver	INFO	Listening on 127.0.0.1:55615
+1600254401919	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4yZSAk"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600254403776	Marionette	INFO	Listening on port 44897
+1600254403825	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600254647299	geckodriver	INFO	Listening on 127.0.0.1:33695
+1600254647302	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXXqC0G"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600254648850	Marionette	INFO	Listening on port 34139
+1600254649062	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600254709071	geckodriver	INFO	Listening on 127.0.0.1:33333
+1600254709074	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqT3VP5"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600254711145	Marionette	INFO	Listening on port 35819
+1600254711191	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600254735645	geckodriver	INFO	Listening on 127.0.0.1:38023
+1600254735651	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyrNABY"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600254737892	Marionette	INFO	Listening on port 34023
+1600254737958	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600254775189	geckodriver	INFO	Listening on 127.0.0.1:46705
+1600254775201	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilel9nHUm"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600254780767	Marionette	INFO	Listening on port 34645
+1600254780835	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600254807451	Marionette	INFO	Stopped listening on port 34645
+1600254808496	Marionette	INFO	Stopped listening on port 35819
+1600254809618	Marionette	INFO	Stopped listening on port 34139
+1600254810933	Marionette	INFO	Stopped listening on port 34023
+1600254937680	geckodriver	INFO	Listening on 127.0.0.1:51947
+1600254937688	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiles3vwDC"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600254939884	Marionette	INFO	Listening on port 43957
+1600254939899	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600254966601	geckodriver	INFO	Listening on 127.0.0.1:38541
+1600254966604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuluQDV"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600254968150	Marionette	INFO	Listening on port 40063
+1600254968440	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600255010968	geckodriver	INFO	Listening on 127.0.0.1:59819
+1600255010971	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqvNHng"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600255012843	Marionette	INFO	Listening on port 35049
+1600255012918	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600255125095	geckodriver	INFO	Listening on 127.0.0.1:39281
+1600255125099	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8pmnE9"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600255127002	Marionette	INFO	Listening on port 44855
+1600255127134	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600255426492	Marionette	INFO	Stopped listening on port 44855
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2271))
+1600255567735	Marionette	INFO	Stopped listening on port 40063
+1600255600154	geckodriver	INFO	Listening on 127.0.0.1:37971
+1600255601161	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeQXbYw"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600255602736	Marionette	INFO	Listening on port 39975
+1600255602801	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600255621039	Marionette	INFO	Stopped listening on port 39975
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.sbzend.ssls.com"
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2271))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2271))
+1600255718317	geckodriver	INFO	Listening on 127.0.0.1:48003
+1600255718324	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFAszPF"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600255720260	Marionette	INFO	Listening on port 43099
+1600255720330	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600260782883	Marionette	INFO	Stopped listening on port 35049
+1600260785532	Marionette	INFO	Stopped listening on port 43099
+1600260787742	Marionette	INFO	Stopped listening on port 43957
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1600268428008	Marionette	INFO	Stopped listening on port 44897
