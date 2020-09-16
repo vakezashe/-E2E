@@ -21,6 +21,8 @@ def routes(user, driver):
 
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//span[@ng-hide="showPassword"]'))).click()
 
+    # driver.close()
+
 
 if __name__ == "__main__":
     routes(user='wrong_user', driver=authorization_page_welcome_back.wdriver())
