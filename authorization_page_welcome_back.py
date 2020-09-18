@@ -7,15 +7,11 @@ import authorization_page_not_registered_user
 
 
 def go_to_profile(driver):
-
     WebDriverWait(driver, 5).until(
         EC.visibility_of_element_located((By.XPATH, '//button[@class="btn block primary"]'))).click()
-
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located(
         (By.XPATH, "//div[@class='ssls-dropdown ssls-header-user ssls-header-dropdown']"))).click()
-
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//a[@href='/user/profile']"))).click()
-
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text ng-binding']")))
 
 
@@ -54,12 +50,13 @@ def signout_user(driver):
 
 
 def main1(user, driver):
+    first_data = {}
     authorization_page_not_registered_user.login_user(user, driver)
     go_to_profile(driver)
     data_user(driver)
-    qwe = data_user(driver)
-    # print(qwe)
-    return qwe
+    first_data = data_user(driver)
+
+    return first_data
 
 
 if __name__ == "__main__":

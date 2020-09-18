@@ -999,3 +999,27 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 1600431161588	Marionette	WARN	TLS certificate errors will be ignored for this session
 1600431199445	Marionette	INFO	Stopped listening on port 39929
 1600431200271	Marionette	INFO	Stopped listening on port 41447
+1600431381287	geckodriver	INFO	Listening on 127.0.0.1:44751
+1600431381295	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLsTat2"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600431385870	Marionette	INFO	Listening on port 33753
+1600431385924	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600431400775	geckodriver	INFO	Listening on 127.0.0.1:60317
+1600431400784	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecnj4m5"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600431405409	Marionette	INFO	Listening on port 35867
+1600431405518	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600431490501	Marionette	INFO	Stopped listening on port 33753
+1600431490660	Marionette	INFO	Stopped listening on port 35867
+1600432711618	geckodriver	INFO	Listening on 127.0.0.1:51573
+1600432711625	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewX9zFf"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600432717256	Marionette	INFO	Listening on port 45949
+1600432717380	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600432734309	geckodriver	INFO	Listening on 127.0.0.1:39249
+1600432734319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesB4Grh"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600432738971	Marionette	INFO	Listening on port 33959
+1600432738988	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600432763075	Marionette	INFO	Stopped listening on port 45949
+1600434270313	Marionette	INFO	Stopped listening on port 33959
