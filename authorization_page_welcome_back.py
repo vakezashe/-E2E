@@ -3,43 +3,16 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import users_pom
-import requests
-
-'''
-4. "Log in" button has to be changed on "User@email" button (with dropdown menu) 
-
-    from the left side in the Header of the page
-
-    from the RIGHT side in the Header of the page.
-'''
-
-# user = 'wrong_user'
-# print(users_pom.get_user(user)['email'])
-# print(users_pom.get_user(user)["email"] and users_pom.get_user(user)["password"])
+import authorization_page_not_registered_user
 
 
-def wdriver():
-    driver = webdriver.Firefox(executable_path=r'./geckodriver')
-    driver.get('https://www.sbzend.ssls.com')
-    assert driver.get('https://www.sbzend.ssls.com') == 200
-
-    return driver
+def main(user, driver):
+    authorization_page_not_registered_user.login_user(user, driver)
+    profile_data(driver)
+    signout_user(driver)
 
 
-def routes(user, driver):
-    WebDriverWait(driver, 5).until(
-        EC.visibility_of_element_located((By.XPATH, "//span[@class='ssls-toolbar__btn-text']"))).click()
-
-    WebDriverWait(driver, 5).until(
-        EC.visibility_of_element_located((By.XPATH, '//input[@name="email"]'))).send_keys(
-        users_pom.get_user(user)["email"])
-
-    WebDriverWait(driver, 5).until(
-        EC.visibility_of_element_located((By.XPATH, '//input[@type="password"]'))).send_keys(
-        users_pom.get_user(user)["password"])
-
-    WebDriverWait(driver, 5).until(
-        EC.visibility_of_element_located((By.XPATH, '//span[@ng-hide="showPassword"]'))).click()
+def profile_data(driver):
 
     WebDriverWait(driver, 5).until(
         EC.visibility_of_element_located((By.XPATH, '//button[@class="btn block primary"]'))).click()
@@ -69,16 +42,22 @@ def routes(user, driver):
         EC.visibility_of_element_located((By.XPATH, "//span[@class=\"text mail-list\"]"))).text
 
     print(name,'\n',email,'\n',phone,'\n',address,'\n',support_pin,'\n',newsletter)
+    info = {}
+    info["name"]=name
+    info['phone']=phone
+    info['address']=address
+    info['support_pin']=support_pin
+    info['newsletter']=newsletter
+    print(info)
+    return info
 
-    # WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//div[@class="ssls-dropdown ssls-header-user ssls-header-dropdown"]'))).click()
 
-    # WebDriverWait(driver, 5).until(EC.visibility_of_element_located(
-    #     (By.XPATH, '//button[@class="ssls-btn waves-effect waves-classic ssls-header-dropdown-nav-item ssls-header-btn"]'))).click()
-
-    # driver.close()
+def signout_user(driver):
+    WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//div[@class="ssls-dropdown ssls-header-user ssls-header-dropdown"]'))).click()
+    WebDriverWait(driver, 5).until(EC.visibility_of_element_located(
+        (By.XPATH, '//button[@class="ssls-btn waves-effect waves-classic ssls-header-dropdown-nav-item ssls-header-btn"]'))).click()
 
 
 if __name__ == "__main__":
-    routes(user='correct_user', driver=wdriver())
-
+    main(user='correct_user', driver=authorization_page_not_registered_user.wdriver())
 
