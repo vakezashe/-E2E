@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from e2e import users_pom
+import users_pom
 import requests
 
 '''
@@ -21,6 +21,8 @@ import requests
 def wdriver():
     driver = webdriver.Firefox(executable_path=r'./geckodriver')
     driver.get('https://www.sbzend.ssls.com')
+    assert driver.get('https://www.sbzend.ssls.com') == 200
+
     return driver
 
 

@@ -1,4 +1,5 @@
-from e2e import authorization_page_welcome_back
+# from e2e import authorization_page_welcome_back
+import authorization_page_welcome_back
 
 
 if __name__ == "__main__":
