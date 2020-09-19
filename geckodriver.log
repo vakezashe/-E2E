@@ -650,3 +650,17 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1600289246621	Marionette	INFO	Listening on port 36215
 1600289246664	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1600289642322	Marionette	INFO	Stopped listening on port 33481
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1600289643474	Marionette	INFO	Stopped listening on port 40637
+1600289644811	Marionette	INFO	Stopped listening on port 33829
+1600289646091	Marionette	INFO	Stopped listening on port 38155
+1600289647410	Marionette	INFO	Stopped listening on port 42391
+1600289648511	Marionette	INFO	Stopped listening on port 45269
+1600289649597	Marionette	INFO	Stopped listening on port 45869
+1600289650750	Marionette	INFO	Stopped listening on port 36215
