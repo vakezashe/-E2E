@@ -24,6 +24,11 @@ def login_user(user, driver):
         EC.visibility_of_element_located((By.XPATH, '//button[@class="btn block primary"]'))).click()
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//span[@ng-hide="showPassword"]'))).click()
 
+    title = WebDriverWait(driver, 5).until(
+        EC.visibility_of_element_located((By.XPATH, "//h1[@class='page-title']"))).text
+
+    return title
+
 
 def error(driver):
     login_user(user='wrong_user', driver=driver)
@@ -37,5 +42,4 @@ def driver_close(driver):
 
 
 if __name__ == "__main__":
-    # login_user(user='wrong_user', driver=wdriver())
     error(driver=wdriver())

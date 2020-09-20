@@ -14,6 +14,9 @@ def go_to_profile(driver):
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//a[@href='/user/profile']"))).click()
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text ng-binding']")))
 
+    # qwe = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//h1[@class='page-title']"))).text
+    # print(qwe)
+
 
 def main(user, driver):
     apn.login_user(user, driver)

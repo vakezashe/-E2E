@@ -28,3 +28,9 @@ def test_login():
     assert received_error_message != incorrect_error
 
 
+def test_title():
+    # title = apn.login_user(user='wrong_user', driver=apn.driver)
+    title = apn.login_user(user='wrong_user', driver=apn.wdriver())
+    print(title)
+    apn.driver_close()
+

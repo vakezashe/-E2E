@@ -6,8 +6,24 @@ from e2e import users_pom
 from e2e import authorization_page_welcome_back as apw
 import pytest
 import requests
+from e2e.tests import test_authorization_page_not_registered_user as tapn
 
 
+def test_connection():
+    tapn.test_connection()
+
+
+# def test_profile_page():
+#     url = 'https://www.sbzend.ssls.com/user/profile'
+#     print(requests.get(url).status_code)
+#     print(requests.get(url).url)
+#     # assert requests.get(url).status_code == 200
+
+
+
+'''
+https://www.sbzend.ssls.com/user/profile
+'''
 
 
 # def go_to_profile(driver):
