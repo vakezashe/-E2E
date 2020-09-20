@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import users_pom
-import authorization_page_not_registered_user
+from e2e import users_pom
+from e2e import authorization_page_not_registered_user as apn
 
 
 def go_to_profile(driver):
@@ -16,23 +16,10 @@ def go_to_profile(driver):
 
 
 def main(user, driver):
-    authorization_page_not_registered_user.login_user(user, driver)
+    apn.login_user(user, driver)
     go_to_profile(driver)
+    apn.driver_close(driver)
 
 
 if __name__ == "__main__":
-    main(user='correct_user', driver=authorization_page_not_registered_user.wdriver())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    main(user='correct_user', driver=apn.wdriver())

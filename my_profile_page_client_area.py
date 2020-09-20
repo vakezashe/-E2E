@@ -39,7 +39,6 @@ def logout_user(driver):
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//div[@class="ssls-dropdown ssls-header-user ssls-header-dropdown"]'))).click()
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located(
         (By.XPATH, '//button[@class="ssls-btn waves-effect waves-classic ssls-header-dropdown-nav-item ssls-header-btn"]'))).click()
-    driver.close()
 
 
 def precondition(user, driver):
@@ -47,6 +46,7 @@ def precondition(user, driver):
     apw.go_to_profile(driver)
     user_data = data_user(driver)
     logout_user(driver)
+    apn.driver_close(driver)
     return user_data
 
 
