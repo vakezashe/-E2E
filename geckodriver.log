@@ -2000,3 +2000,43 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 1600679572524	Marionette	INFO	Listening on port 33983
 1600679572586	Marionette	WARN	TLS certificate errors will be ignored for this session
 1600679583125	Marionette	INFO	Stopped listening on port 33983
+1600680709444	geckodriver	INFO	Listening on 127.0.0.1:52345
+1600680709447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOeMreR"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600680711012	Marionette	INFO	Listening on port 35863
+1600680711084	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600680909254	Marionette	INFO	Stopped listening on port 35863
+1600682121203	geckodriver	INFO	Listening on 127.0.0.1:48141
+1600682121206	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepvOABE"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600682122757	Marionette	INFO	Listening on port 45541
+1600682122946	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600682210502	geckodriver	INFO	Listening on 127.0.0.1:39125
+1600682210505	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezRRYh9"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600682212152	Marionette	INFO	Listening on port 37305
+1600682212230	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600682232127	Marionette	INFO	Stopped listening on port 37305
+1600682251560	geckodriver	INFO	Listening on 127.0.0.1:55047
+1600682251563	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileO8zDtE"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600682253023	Marionette	INFO	Listening on port 38849
+1600682253072	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600682270839	Marionette	INFO	Stopped listening on port 38849
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 77: Error: Connection closed, pending request to server0.conn0.child2/domnode103, type setNodeValue failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:256:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+showTextEditor/done/</<@resource://devtools/client/inspector/markup/views/text-editor.js:101:25
+do@resource://devtools/client/shared/undo.js:70:16
+endBatch@resource://devtools/client/shared/undo.js:81:11
+do@resource://devtools/client/shared/undo.js:94:10
+showTextEditor/done/<@resource://devtools/client/inspector/markup/views/text-editor.js:99:31
+process@resource://gre/modules/Promise-backend.js:961:38
+walkerLoop@resource://gre/modules/Promise-backend.js:845:29
+Promise*scheduleWalkerLoop@resource://gre/modules/Promise-backend.js:775:19
+schedulePromise@resource://gre/modules/Promise-backend.js:809:12
+completePromise@resource://gre/modules/Promise-backend.js:741:12
+
+1600689528718	Marionette	INFO	Stopped listening on port 45541

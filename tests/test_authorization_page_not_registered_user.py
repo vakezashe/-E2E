@@ -14,12 +14,13 @@ def test_connection():
     assert requests.get(url).status_code == 200
 
 
-def test_login():
+def test_login_error():
     ''' Проверяет, что находимся на странице авторищации и
     сообщение об ошибки неправильных даннах для логина и title страницы авторизации. '''
 
     url = 'https://www.sbzend.ssls.com/authorize'
     assert requests.get(url).status_code == 200
+    print(requests.url())
 
     correct_error = 'Uh oh! Email or password is incorrect'
     incorrect_error = 'OH UH! Email or Password is Correct'

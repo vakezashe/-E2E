@@ -21,8 +21,12 @@ def go_to_profile(driver):
 def main(user, driver):
     apn.login_user(user, driver)
     go_to_profile(driver)
+    title = apn.get_title(driver)
     apn.driver_close(driver)
+
+    return title
 
 
 if __name__ == "__main__":
-    main(user='correct_user', driver=apn.wdriver())
+    # main(user='correct_user', driver=apn.wdriver())
+    print(main(user='correct_user', driver=apn.wdriver()))
