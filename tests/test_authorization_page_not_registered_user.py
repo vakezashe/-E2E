@@ -9,28 +9,27 @@ import requests
 
 def test_connection():
     ''' Проверяет соеденение.'''
+
     url = 'https://www.sbzend.ssls.com/'
     assert requests.get(url).status_code == 200
 
 
 def test_login():
     ''' Проверяет, что находимся на странице авторищации и
-    сообщение об ошибки неправильных даннах для логина  '''
+    сообщение об ошибки неправильных даннах для логина и title страницы авторизации. '''
+
     url = 'https://www.sbzend.ssls.com/authorize'
     assert requests.get(url).status_code == 200
 
     correct_error = 'Uh oh! Email or password is incorrect'
     incorrect_error = 'OH UH! Email or Password is Correct'
 
-    received_error_message = apn.error(driver=apn.wdriver())
+    received_messages = apn.error(driver=apn.wdriver())
 
-    assert received_error_message == correct_error
-    assert received_error_message != incorrect_error
+    received_error = received_messages[0]
+    title = received_messages[1]
 
-
-def test_title():
-    # title = apn.login_user(user='wrong_user', driver=apn.driver)
-    title = apn.login_user(user='wrong_user', driver=apn.wdriver())
-    print(title)
-    apn.driver_close()
+    assert received_error == correct_error
+    assert received_error != incorrect_error
+    assert title == 'Authorization'
 
