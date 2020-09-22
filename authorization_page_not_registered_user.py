@@ -35,7 +35,8 @@ def error(driver):
 
     title = driver.title  # Sign In | SSLs.com
     current_url = driver.current_url  # https://www.sbzend.ssls.com/authorize
-    driver.close()
+
+    # driver.close()
 
     return error1, title, current_url
 

@@ -15,23 +15,23 @@ def go_to_profile(driver):
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text ng-binding']")))
 
     current_page_title = driver.title
-    print(current_page_title)
+    # print(current_page_title)
     return current_page_title
 
 
 def main(user, driver):
     apn.login_user(user, driver)
     go_to_profile(driver)
-
     # print(go_to_profile(driver))
-    # qwe = go_to_profile(driver)
-    # print(qwe)
+
     current_url = driver.current_url  # https://www.sbzend.ssls.com/user/profile
-    # title1 = go_to_profile(driver)
-    # print(title1)
-    # print(title, current_url)
+
+    # title = go_to_profile(driver)
+    title = driver.title
+    print(title)
+
     # driver.close()
-    # return title, current_url
+    return current_url, title
 
 
 if __name__ == "__main__":

@@ -12,7 +12,20 @@ def test_login_error():
 
     received_messages = apw.main(user='correct_user', driver=apn.wdriver())
 
-    current_page_title = received_messages[0]
-    current_url_title = received_messages[1]
+    print(received_messages)
 
-    assert current_page_title == 'My Profile | SSLs.com' and current_url_title == 'https://www.sbzend.ssls.com/user/profile'
+    print(type(received_messages))
+
+    current_page_title = received_messages[0]
+
+
+
+    # current_url_title = received_messages[-1]
+    # print(received_messages.split(' ')[-1])
+
+    # print(''.join(qwe.split()[-1]))
+
+    # print(current_url_title)
+
+    # assert current_page_title == 'My Profile | SSLs.com' and current_url_title == 'https://www.sbzend.ssls.com/user/profile'
+    # assert current_url_title == 'https://www.sbzend.ssls.com/user/profile'
