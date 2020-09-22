@@ -7,20 +7,26 @@ import pytest
 import requests
 
 
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from e2e import users_pom
+import requests
+
+
 def test_connection():
-    ''' Проверяет соеденение.'''
+    ''' Check connect.'''
 
     url = 'https://www.sbzend.ssls.com/'
     assert requests.get(url).status_code == 200
 
 
 def test_login_error():
-    ''' Проверяет, что находимся на странице авторищации и
-    сообщение об ошибки неправильных даннах для логина и title страницы авторизации. '''
+    ''' Check current page and message error. '''
 
     url = 'https://www.sbzend.ssls.com/authorize'
     assert requests.get(url).status_code == 200
-    print(requests.url())
 
     correct_error = 'Uh oh! Email or password is incorrect'
     incorrect_error = 'OH UH! Email or Password is Correct'
@@ -29,8 +35,8 @@ def test_login_error():
 
     received_error = received_messages[0]
     title = received_messages[1]
+    current_url = received_messages[2]
 
-    assert received_error == correct_error
-    assert received_error != incorrect_error
-    assert title == 'Authorization'
+    assert received_error == correct_error and received_error != incorrect_error
+    assert title == 'Sign In | SSLs.com' and current_url == 'https://www.sbzend.ssls.com/authorize'
 

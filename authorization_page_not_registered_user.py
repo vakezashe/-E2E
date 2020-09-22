@@ -7,7 +7,11 @@ import requests
 
 
 def wdriver():
-    driver = webdriver.Firefox(executable_path=r'./geckodriver')
+    try:
+        driver = webdriver.Firefox()
+    except:
+        driver = webdriver.Firefox(executable_path=r'./geckodriver')
+
     driver.get('https://www.sbzend.ssls.com')
     assert requests.get('https://www.sbzend.ssls.com/').status_code == 200
     return driver
@@ -24,29 +28,16 @@ def login_user(user, driver):
         EC.visibility_of_element_located((By.XPATH, '//button[@class="btn block primary"]'))).click()
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//span[@ng-hide="showPassword"]'))).click()
 
-    # title = WebDriverWait(driver, 5).until(
-    #     EC.visibility_of_element_located((By.XPATH, "//h1[@class='page-title']"))).text
-
-    # return title
-
-
-def get_title(driver):
-    title = WebDriverWait(driver, 5).until(
-        EC.visibility_of_element_located((By.XPATH, "//h1[@class='page-title']"))).text
-    return title
-
 
 def error(driver):
     login_user(user='wrong_user', driver=driver)
-    # print(login_user(user='wrong_user', driver=driver))
     error1 = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//div[@class="noty_text"]'))).text
-    title = get_title(driver)
-    driver.close()
-    return error1, title
 
-
-def driver_close(driver):
+    title = driver.title  # Sign In | SSLs.com
+    current_url = driver.current_url  # https://www.sbzend.ssls.com/authorize
     driver.close()
+
+    return error1, title, current_url
 
 
 if __name__ == "__main__":
