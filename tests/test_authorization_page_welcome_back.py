@@ -8,10 +8,9 @@ def test_connection():
     tapn.test_connection()
 
 
-def test_login_error():
+def test_login():
 
     received_messages = apw.main(user='correct_user', driver=apn.wdriver())
-
     print(received_messages)
 
     current_url_title = received_messages[0]
