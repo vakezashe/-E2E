@@ -5,10 +5,12 @@ from e2e import authorization_page_welcome_back as apw
 
 
 def test_connection():
+    ''' Check connection'''
     tapn.test_connection()
 
 
 def test_login():
+    ''' Check profile url and title page '''
 
     received_messages = apw.main(user='correct_user', driver=apn.wdriver())
     print(received_messages)
