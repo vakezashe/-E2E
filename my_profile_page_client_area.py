@@ -2,9 +2,12 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import users_pom
-import authorization_page_welcome_back as apw
-import authorization_page_not_registered_user as apn
+# import users_pom
+# import authorization_page_welcome_back as apw
+# import authorization_page_not_registered_user as apn
+
+from e2e import authorization_page_welcome_back as apw
+from e2e import authorization_page_not_registered_user as apn
 
 
 def data_user(driver):
@@ -27,6 +30,12 @@ def data_user(driver):
     newsletter = WebDriverWait(driver, 5).until(
         EC.visibility_of_element_located((By.XPATH, "//span[@class=\"text mail-list\"]"))).text
 
+    current_url = driver.current_url
+    title = driver.title
+
+    # print(current_url)
+    # print(title)
+
     user_info["name"]=name
     user_info['phone']=phone
     user_info['address']=address
@@ -46,16 +55,28 @@ def precondition(user, driver):
     apw.go_to_profile(driver)
     user_data = data_user(driver)
     logout_user(driver)
-    apn.driver_close(driver)
+
+    driver.close()
     return user_data
 
 
-first_user_data = precondition(user='correct_user', driver=apn.wdriver())
-second_user_data = precondition(user='correct_user', driver=apn.wdriver())
+# first_user_data = precondition(user='correct_user', driver=apn.wdriver())
+# second_user_data = precondition(user='correct_user', driver=apn.wdriver())
 
-print(first_user_data)
-print(second_user_data)
+
+def data_of_profile():
+    user_data = precondition(user='correct_user', driver=apn.wdriver())
+    return user_data
+
+
+def main():
+    first_user_data = data_of_profile()
+    second_user_data = data_of_profile()
+    assert first_user_data == second_user_data
+    # print(first_user_data)
+    # print(second_user_data)
+    return first_user_data, second_user_data
 
 
 if __name__ == "__main__":
-    assert first_user_data == second_user_data
+    main()

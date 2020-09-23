@@ -21,4 +21,3 @@ def test_login():
     url = 'https://www.sbzend.ssls.com/user/profile'
 
     assert current_page_title == 'My Profile | SSLs.com' or 'My SSL' and current_url_title == url
-

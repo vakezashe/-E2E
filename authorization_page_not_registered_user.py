@@ -8,9 +8,11 @@ import requests
 
 def wdriver():
     try:
-        driver = webdriver.Firefox()
-    except:
+        # driver = webdriver.Firefox()
         driver = webdriver.Firefox(executable_path=r'./geckodriver')
+    except:
+        driver = webdriver.Firefox()
+        # driver = webdriver.Firefox(executable_path=r'./geckodriver')
 
     driver.get('https://www.sbzend.ssls.com')
     assert requests.get('https://www.sbzend.ssls.com/').status_code == 200
@@ -36,7 +38,7 @@ def error(driver):
     title = driver.title  # Sign In | SSLs.com
     current_url = driver.current_url  # https://www.sbzend.ssls.com/authorize
 
-    # driver.close()
+    driver.close()
 
     return error1, title, current_url
 
