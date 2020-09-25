@@ -12,17 +12,20 @@ def go_to_profile(driver):
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located(
         (By.XPATH, "//div[@class='ssls-dropdown ssls-header-user ssls-header-dropdown']"))).click()
     WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//a[@href='/user/profile']"))).click()
-    WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text ng-binding']")))
 
 
 def main(user, driver):
     apn.login_user(user, driver)
-    go_to_profile(driver)
 
-    current_url = driver.current_url  # https://www.sbzend.ssls.com/user/profile
+    wait = WebDriverWait(driver, 10)
+
+    wait.until(EC.url_changes('https://www.sbzend.ssls.com/authorize'))
+    current_url = driver.current_url
+
+    wait.until(EC.title_is('My SSL'))
     title = driver.title  # My SSL
 
-    driver.close()
+    # driver.close()
 
     return current_url, title
 

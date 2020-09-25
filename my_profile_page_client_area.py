@@ -73,8 +73,8 @@ def main():
     first_user_data = data_of_profile()
     second_user_data = data_of_profile()
     assert first_user_data == second_user_data
-    # print(first_user_data)
-    # print(second_user_data)
+    print(first_user_data)
+    print(second_user_data)
     return first_user_data, second_user_data
 
 

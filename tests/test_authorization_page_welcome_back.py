@@ -15,9 +15,9 @@ def test_login():
     received_messages = apw.main(user='correct_user', driver=apn.wdriver())
     print(received_messages)
 
-    current_url_title = received_messages[0]
-    current_page_title = received_messages[1]
+    current_url = received_messages[0]
+    current_title = received_messages[1]
 
-    url = 'https://www.sbzend.ssls.com/user/profile'
+    url = 'https://www.sbzend.ssls.com/user/bundles'
 
-    assert current_page_title == 'My Profile | SSLs.com' or 'My SSL' and current_url_title == url
+    assert current_title == 'My SSL' and current_url == url
