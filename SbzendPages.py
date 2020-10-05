@@ -12,6 +12,7 @@ class Locators:
     # LOCATOR_GOOGLE_SEARCH_BUTTON = (By.XPATH, "//input[@class='gNO89b']")
 
     BUTTON_LOGIN = (By.XPATH, "//span[@class='ssls-toolbar__btn-text']")
+    MAIL_FIELD = (By.XPATH, '//input[@name="email"]')
 
     # WebDriverWait(driver, 5).until(
     #     EC.visibility_of_element_located((By.XPATH, "//span[@class='ssls-toolbar__btn-text']"))).click()
@@ -20,15 +21,21 @@ class Locators:
 # class SearchHelper(BasePage):
 class LoginPage(BasePage):
 
-    def enter_mail_and_password(self):
+    def go_to_authorize_page(self):
+        login_button = self.find_element(Locators.BUTTON_LOGIN)
+        login_button.click()
 
-        self.find_element(Locators.BUTTON_LOGIN).click()
+    def enter_mail(self, mail):
+        field_mail = self.find_element(Locators.MAIL_FIELD)
+        field_mail.click()
+        field_mail.send_keys(mail)
+        return field_mail
+
 
         # search_field = self.find_element(Locators.BUTTON_LOGIN).click()
         # search_field.click()
         # search_field.send_keys(word)
         # return search_field
-
 
     # def enter_word(self, word):
     #     # search_field = self.find_element(YandexSeacrhLocators.LOCATOR_YANDEX_SEARCH_FIELD)
