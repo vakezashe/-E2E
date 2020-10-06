@@ -1,35 +1,42 @@
-# from BaseApp import BasePage
 from e2e.BaseApp import BasePage
 from selenium.webdriver.common.by import By
 
 
 class Locators:
-    # LOCATOR_YANDEX_SEARCH_FIELD = (By.ID, "text")
-    # LOCATOR_YANDEX_SEARCH_BUTTON = (By.CLASS_NAME, "search2__button")
-    # LOCATOR_YANDEX_NAVIGATION_BAR = (By.CSS_SELECTOR, ".service__name")
-
-    # LOCATOR_GOOGLE_SEARCH_FIELD = (By.XPATH, "//input[@class='gLFyf gsfi']")
-    # LOCATOR_GOOGLE_SEARCH_BUTTON = (By.XPATH, "//input[@class='gNO89b']")
-
-    BUTTON_LOGIN = (By.XPATH, "//span[@class='ssls-toolbar__btn-text']")
+    BUTTON_LOG_IN = (By.XPATH, "//span[@class='ssls-toolbar__btn-text']")
     MAIL_FIELD = (By.XPATH, '//input[@name="email"]')
+    PASSWORD_FIELD = (By.XPATH, '//input[@type="password"]')
+    PASSWORD_CHECK = (By.XPATH, '//button[@ng-click="showPassword = !showPassword"]')
+    BUTTON_LOGIN = (By.XPATH, "//button[@class='btn block primary']")
 
-    # WebDriverWait(driver, 5).until(
-    #     EC.visibility_of_element_located((By.XPATH, "//span[@class='ssls-toolbar__btn-text']"))).click()
 
-
-# class SearchHelper(BasePage):
 class LoginPage(BasePage):
 
     def go_to_authorize_page(self):
-        login_button = self.find_element(Locators.BUTTON_LOGIN)
+        login_button = self.find_element(Locators.BUTTON_LOG_IN)
         login_button.click()
 
     def enter_mail(self, mail):
         field_mail = self.find_element(Locators.MAIL_FIELD)
+        field_mail.clear()
         field_mail.click()
         field_mail.send_keys(mail)
         return field_mail
+
+    def enter_password(self, password):
+        field_password = self.find_element(Locators.PASSWORD_FIELD)
+        field_password.click()
+        field_password.send_keys(password)
+
+        button_login = self.find_element(Locators.BUTTON_LOGIN)
+        button_login.click()
+
+        return field_password
+
+    def check_password(self):
+        button_eye = self.find_element(Locators.PASSWORD_CHECK)
+        button_eye.click()
+
 
 
         # search_field = self.find_element(Locators.BUTTON_LOGIN).click()
