@@ -16,6 +16,13 @@ def wdriver():
 
     driver.get('https://www.sbzend.ssls.com')
     assert requests.get('https://www.sbzend.ssls.com/').status_code == 200
+
+    # options = Options()
+    # options.set_headless()
+    # assert options.headless  # Operating in headless mode
+    # driver = Firefox(options=options)
+    # driver.get(url)
+
     return driver
 
 
