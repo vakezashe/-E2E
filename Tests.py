@@ -16,16 +16,8 @@ def test_go_to_login_page(browser):
     # print(browser.title.lower())
     assert browser.title.lower() == 'sign in | ssls.com'
 
-    # yandex_main_page.enter_word("Hello")
-    # yandex_main_page.enter_word("Python")
-    # main_page.enter_word("Python")
-
-    # yandex_main_page.click_on_the_search_button()
-    # main_page.click_on_the_search_button()
-
     # elements = yandex_main_page.check_navigation_bar()
     # print(elements)
-
     # assert "Картинки" and "Видео" in elements
 
 
@@ -36,12 +28,12 @@ def test_enter_incorrect_mail(browser, user='wrong_user'):
     assert 'Uh oh! This' and 'isn’t an email' in browser.page_source
 
 
-def test_enter_mail(browser, user='wrong_user'):
+def test_enter_wrong_mail(browser, user='wrong_user'):
     login_page = lp(browser)
     login_page.enter_mail(get_user(user)["email"])
 
 
-def test_enter_password(browser, user='wrong_user'):
+def test_enter_wrong_password(browser, user='wrong_user'):
     login_page = lp(browser)
     login_page.enter_password(get_user(user)["password"])
     time.sleep(2)
@@ -53,26 +45,14 @@ def test_check_password(browser):
     login_page.check_password()
 
 
+def test_enter_correct_mail(browser, user='correct_user'):
+    login_page = lp(browser)
+    login_page.enter_mail(get_user(user)["email"])
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def test_enter_correct_password(browser, user='correct_user'):
+    login_page = lp(browser)
+    login_page.enter_password(get_user(user)["password"])
+    # time.sleep(2)
+    # assert 'Uh oh! Email or password is incorrect' not in browser.page_source
 

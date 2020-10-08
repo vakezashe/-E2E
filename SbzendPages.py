@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 class Locators:
     BUTTON_LOG_IN = (By.XPATH, "//span[@class='ssls-toolbar__btn-text']")
     MAIL_FIELD = (By.XPATH, '//input[@name="email"]')
-    PASSWORD_FIELD = (By.XPATH, '//input[@type="password"]')
+    PASSWORD_FIELD = (By.XPATH, '//input[@ng-init="showPassword = false"]')
     PASSWORD_CHECK = (By.XPATH, '//button[@ng-click="showPassword = !showPassword"]')
     BUTTON_LOGIN = (By.XPATH, "//button[@class='btn block primary']")
 
@@ -26,6 +26,7 @@ class LoginPage(BasePage):
     def enter_password(self, password):
         field_password = self.find_element(Locators.PASSWORD_FIELD)
         field_password.click()
+        field_password.clear()
         field_password.send_keys(password)
 
         button_login = self.find_element(Locators.BUTTON_LOGIN)
