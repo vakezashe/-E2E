@@ -15,7 +15,8 @@ pipeline {
         stage("Run tests") {
             steps {
                 echo " ============== start building image =================="
-                 sh 'ssh root@ub1 python3 -m pytest -vs /home/mye/PycharmProjects/pythonProject/e2e/Tests.py'
+                 sh 'ssh root@ub1 pip3 freeze'
+//                 sh 'ssh root@ub1 python3 -m pytest -vs /home/mye/PycharmProjects/pythonProject/e2e/Tests.py'
                 }
             }
         }
