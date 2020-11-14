@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                  sh 'ssh root@ub1 python3 -V'
-                 sh 'ssh root@ub1 "pip3 freeze | grep pytest"'
+                 sh 'ssh root@ub1 pip3 freeze'
 //                 sh 'ssh root@ub1 python3 -m pytest -vs /home/mye/PycharmProjects/pythonProject/e2e/Tests.py'
                 }
             }
