@@ -1,0 +1,23 @@
+#!groovy
+
+properties([disableConcurrentBuilds()])
+
+pipeline {
+    agent {
+        label 'master'
+        }
+    triggers { pollSCM('* * * * *') }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
+        timestamps()
+    }
+    stages {
+        stage("Run tests") {
+            steps {
+                echo " ============== start building image =================="
+                 sh 'ssh root@ub1 \'hostname\''
+                }
+            }
+        }
+    }
+}
